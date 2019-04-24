@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotaActivity">
+
+    <TextView
+        android:id="@+id/nota_nota_pembayaran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:text="Nota"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"
+        android:textColor="@android:color/white"
+        android:background="@color/colorAccent"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/nota_txt_jumlah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nota_nota_pembayaran"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:text="0\n0\n0"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/nota_txt_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nota_nota_pembayaran"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/nota_txt_jumlah"
+        android:text="Kopi 1\nKopi 2\nKopi 3"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/nota_txt_harga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nota_nota_pembayaran"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:text="Rp. 1000\nRp. 2000\nRp. 3000"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/nota_txt_harga"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:background="@android:color/black" />
+
+    <TextView
+        android:id="@+id/nota_txt_harga_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view2"
+        android:layout_alignStart="@id/nota_txt_nama"
+        android:layout_alignLeft="@id/nota_txt_nama"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:text="Total :"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/nota_harga_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view2"
+        android:layout_alignRight="@id/nota_txt_harga"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:text="Rp. 0"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/nota_txt_pembayaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nota_txt_harga_total"
+        android:layout_alignStart="@id/nota_txt_nama"
+        android:layout_alignLeft="@id/nota_txt_nama"
+        android:layout_marginRight="25dp"
+        android:text="Pembayaran :"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/nota_pembayaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nota_txt_harga_total"
+        android:layout_alignRight="@id/nota_txt_harga"
+        android:text="Rp. 0"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/nota_txt_kembalian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nota_txt_pembayaran"
+        android:layout_alignStart="@id/nota_txt_nama"
+        android:layout_alignLeft="@id/nota_txt_nama"
+        android:layout_marginRight="25dp"
+        android:text="Kembalian :"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/nota_kembalian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nota_txt_pembayaran"
+        android:layout_alignRight="@id/nota_txt_harga"
+        android:text="Rp. 0"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/nota_txt_kembalian"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:background="@android:color/black" />
+
+    <TextView
+        android:id="@+id/nota_keterangan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view3"
+        android:layout_marginTop="10dp"
+        android:text="Terima Kasih Atas Kunjungan Anda"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:background="@color/colorAccent"
+        android:textSize="24sp" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/nota_keterangan"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/black" />
+
+    <Button
+        android:id="@+id/btn_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view4"
+        android:layout_centerHorizontal="true"
+        android:onClick="buttonMenu"
+        android:text="menu"
+        android:textColor="@android:color/white"
+        android:background="@color/colorAccent"/>
+
+    <Button
+        android:id="@+id/btn_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view4"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@id/btn_menu"
+        android:onClick="telp"
+        android:text="call"
+        android:textColor="@android:color/white"
+        android:background="@color/colorAccent"/>
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view4"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/btn_menu"
+        android:onClick="buttonLogout"
+        android:text="logout"
+        android:textColor="@android:color/white"
+        android:background="@color/colorAccent"/>
+
+</RelativeLayout>

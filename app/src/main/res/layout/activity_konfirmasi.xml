@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Konfirmasi">
+
+    <TextView
+        android:id="@+id/namares"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama : "
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/namahsl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_toRightOf="@+id/namares"/>
+
+    <TextView
+        android:id="@+id/totalres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total : "
+        android:padding="10dp"
+        android:layout_below="@+id/namares"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/totalhsl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@+id/namahsl"
+        android:layout_toRightOf="@+id/totalres"/>
+
+    <TextView
+        android:id="@+id/bayarres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tunai : "
+        android:padding="10dp"
+        android:layout_below="@+id/totalres"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/bayarhsl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@+id/totalhsl"
+        android:layout_toRightOf="@+id/bayarres"/>
+
+    <TextView
+        android:id="@+id/kmblres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kembalian : "
+        android:padding="10dp"
+        android:layout_below="@+id/bayarres"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/kmblhsl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@+id/bayarhsl"
+        android:layout_toRightOf="@+id/kmblres"/>
+
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="KEMBALI"
+        android:padding="10dp"
+        android:layout_below="@+id/kmblres"/>
+
+    <Button
+        android:id="@+id/btndial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CALL"
+        android:padding="10dp"
+        android:layout_below="@+id/btnback"/>
+
+</RelativeLayout>

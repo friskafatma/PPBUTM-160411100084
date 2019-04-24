@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PesanKopi">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_layout" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="10dp"
+        android:id="@+id/img_pesan"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        app:civ_border_color="#FF000000" />
+
+    <TextView
+        android:id="@+id/namakopi_pesan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_pesan"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"
+        android:text="Nama Kopi"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/detail_pesan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/namakopi_pesan"
+        android:layout_centerHorizontal="true"
+        android:text="Detail"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_pesan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="0"
+        android:textColor="@android:color/black"
+        android:textSize="50sp" />
+
+    <Button
+
+        android:id="@+id/button_minus"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_below="@id/detail_pesan"
+        android:layout_marginTop="29dp"
+        android:layout_marginRight="16dp"
+        android:layout_toLeftOf="@+id/total"
+        android:onClick="buttonClick"
+        android:padding="0dp"
+        android:text="-"
+        android:textColor="@android:color/white"
+        android:background="@color/colorAccent"
+        android:textSize="38sp" />
+
+    <Button
+        android:id="@+id/button_plus"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_below="@id/detail_pesan"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="29dp"
+        android:layout_toRightOf="@+id/total"
+        android:onClick="buttonClick"
+        android:padding="0dp"
+        android:text="+"
+        android:textColor="@android:color/white"
+        android:background="@color/colorAccent"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/button_pesan"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:text="pesan"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:onClick="buttonPesan"/>
+
+</RelativeLayout>

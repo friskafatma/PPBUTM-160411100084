@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">hello</string>
+    <string name="cust1">Nama Pelanggan</string>
+    <string name="cust2">Customer Name</string>
+    <string name="menu1">Menu Kopi</string>
+    <string name="menu2">Coffee Menu</string>
+    <string name="kopi1">Arabica</string>
+    <string name="kopi2">Americano</string>
+    <string name="kopi3">Cappucino</string>
+    <string name="jenis1">Sajian</string>
+    <string name="jenis2">Serve</string>
+    <string name="h1">Hangat</string>
+    <string name="h2">Warm</string>
+    <string name="d1">Dingin</string>
+    <string name="d2">Ice</string>
+    <string name="pesan1">Jumlah</string>
+    <string name="pesan2">Amount</string>
+    <string name="total">Total</string>
+    <string name="byr1">Bayar</string>
+    <string name="byr2">Payment</string>
+    <string name="kmbl1">Kembali</string>
+    <string name="kmbl2">Change</string>
+    <string name="htg1">Hitung</string>
+    <string name="htg2">Count</string>
+    <string name="rst1">Reset</string>
+    <string name="rst2">Hapus</string>
+    <string name="fns1">Finish</string>
+    <string name="fns2">Selesai</string>
+    <string name="byrh1">Masukkan Jumlah Uang</string>
+    <string name="byrh2">Enter Money Here</string>
+    <string name="bhs2">ENG</string>
+    <string name="bhs1">INA</string>
+    <string name="tlp1">Panggil</string>
+    <string name="tlp2">Calling</string>
+</resources>
