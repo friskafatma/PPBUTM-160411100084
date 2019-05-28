@@ -87,7 +87,7 @@ public class Main2Activity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void tugas5(View view) {
+    public void modul5(View view) {
         Intent intent = new Intent(Main2Activity.this,Main5Activity.class);
         startActivity(intent);
     }
