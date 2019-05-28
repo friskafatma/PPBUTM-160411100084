@@ -92,4 +92,14 @@
         android:text="Tugas 4"
         android:onClick="tugas4" />
 
+    <Button
+        android:id="@+id/btn_tgs3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="30px"
+        android:layout_marginLeft="750px"
+        android:text="Tugas 5"
+        android:onClick="tugas5" />
+
 </LinearLayout>

@@ -13,7 +13,7 @@ public class Main2Activity extends AppCompatActivity {
     EditText berat,tinggi;
     String tempbb, temptb;
     double bb, tb;
-    Button cek,btn2,btn3;
+    Button cek,btn2,btn3,btn4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +26,7 @@ public class Main2Activity extends AppCompatActivity {
         cek=findViewById(R.id.btn_bmi);
         btn2=findViewById(R.id.btn_tgs1);
         btn3=findViewById(R.id.btn_tgs2);
+        btn3=findViewById(R.id.btn_tgs3);
         hasil=findViewById(R.id.resultbmi);
         status=findViewById(R.id.statusbmi);
 
@@ -83,6 +84,11 @@ public class Main2Activity extends AppCompatActivity {
 
     public void tugas4(View view) {
         Intent intent = new Intent(Main2Activity.this,Login4Activity.class);
+        startActivity(intent);
+    }
+
+    public void tugas5(View view) {
+        Intent intent = new Intent(Main2Activity.this,Main5Activity.class);
         startActivity(intent);
     }
 }
